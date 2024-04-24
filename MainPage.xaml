@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="LorDonIpCalc.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="IP CALCULATOR"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Label
+                Text="Indirizzo IP: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="IndirizzoIp"
+                Placeholder="IpAddress"
+            >
+            </Entry>
+            <Label
+                Text="NetMask: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="Netmask"
+                Placeholder="Netmask"
+            >
+            </Entry>
+            <HorizontalStackLayout
+                HorizontalOptions="CenterAndExpand">
+                <Button
+                    x:Name="CounterBtn"
+                    Text="CALCOLA IP"
+                    Clicked="OnCounterClicked"
+                    Margin="20"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="reset"
+                    Text="CAMBIA IP"
+                    Clicked="AbilitaModifica"
+                    Margin="20"
+                    HorizontalOptions="Fill" />
+
+
+            </HorizontalStackLayout>
+            <Button
+                x:Name="validita"
+                Text="IN ATTESA DEI DATI"
+                HorizontalOptions="Fill" />
+            <Label
+                Text="Network Address: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="NetworkAddress"
+                Placeholder="Network Address"
+                IsReadOnly="True"
+            >
+            </Entry>
+            <Label
+                Text="BroadCast Address: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="BroadCast"
+                Placeholder="Broadcast Address"
+                IsReadOnly="True"
+            >
+            </Entry>
+            <Label
+                Text="First Host Address: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="firstHost"
+                Placeholder="First Host Address"
+                IsReadOnly="True"
+            >
+            </Entry>
+            <Label
+                Text="Last Host Address: "
+                Padding="10"
+            ></Label>
+            <Entry
+                x:Name="lastHost"
+                Placeholder="Last Host Address"
+                IsReadOnly="True"
+            >
+            </Entry>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
